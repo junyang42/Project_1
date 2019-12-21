@@ -1,1 +1,6 @@
-# This is the first text
+# Project Title
+
+# Team Members
+# Arthur Chen
+# Araceli Buenrostro
+# Jun Yang

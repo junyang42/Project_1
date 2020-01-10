@@ -1,3 +1,5 @@
 chicago_camera_tickets.csv
 .ipynb_checkpoints/
+.vscode/
 __pycache__/
+config.py

@@ -61,6 +61,7 @@ image to include
 ![ImageChicagoTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20CHI.png)![ImageNYCTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20NY.png)![ImageNOTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20NOLA.png)
 
 #### Snow Day
+![ImageBoxSnowChicago](https://github.com/junyang42/Project_1/blob/master/Summary/Boxplot%20of%20Snow%20for%20Chicago.png)
 Images to add Chicago and New York
 
 ### Precipitation

@@ -2,10 +2,10 @@
 #### by Araceli Buenrostro, Arthur Chan, and Jun Yang
 
 ## Project Outline
-1. Time pattern of red light ticket data
+1. Explore historical time pattern of red light citation data
 2. How Chicago compares with other cities
-3. Ticket counts compared to traffic pattern
-4. How weather may affect ticket counts
+3. Citation counts compared to traffic pattern
+4. How weather may affect citation counts
 5. Hot spots 
 
 ## Data Source
@@ -18,21 +18,36 @@
 
 ## Approach
 1. Group citation counts by various time intervals (month, day, hour)
-
-   a) Explore counts patterns over time for Chicago, New York and New Orleans
-   
-   b) Explore counts patterns by hour and month
+   1. Explore counts patterns over time for Chicago, New York and New Orleans
+   2. Explore counts patterns by hour and month
 2. Compare pattern against traffic pattern (For Chicago only)
 
    Normalize citation counts by IDOT Northeast Urban annual average daily traffic (AADT) pattern
    
 3. Citation Counts vs. Weather
 
-   a) Queried daily precipitation, snow and temperature data from NOAA Climate Data Online web service API
+   1. Queried daily precipitation, snow and temperature data from NOAA Climate Data Online web service API
    
-   b) Explore pattern against temperature, snow days and rainy days using scatter plots and box plots
+   2. Explore pattern against temperature, snow days and rainy days using scatter plots and box plots
 4. Chicago Citation Counts by Camera Location
 
    Explore citation pattern with box plots and maps
 
+## Analysis
+### Daily Citation Counts over Time
+1. Chicago
+![ImageDailyPlotChicago](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_Chicago.png)
+   1. Citation counts increased significantly after spring 2014. It coincides with the period with new vendor and allegations that tickets were issued with yellow lights less than 3 seconds
+   2. Sharp drops on snow days (e.g. Feb 1, 2015: 397 tickets citywide)
+  
+2. New York City
+![ImageDailyPlotNYC](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_NY.png)
+
+3. New Orleans
+![ImageDailyPlotNO](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_New_Orleans.png)
+Change in pattern after 2017
+
+### Time Pattern
+#### Citations by Month (Left) and Hour (Right)
+![ImageMonthPattern](https://github.com/junyang42/Project_1/blob/master/Summary/MonthlyCount.png)![ImageHourPattern](https://github.com/junyang42/Project_1/blob/master/Summary/HourCount.png)
 

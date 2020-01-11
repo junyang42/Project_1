@@ -12,7 +12,7 @@
 - Chicago red light camera citations:  https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data
 - Chicago traffic:  data:https://data.cityofchicago.org/Transportation/Average-Daily-Traffic-Counts/pfsx-4n4m
 - New York City red light camera citations:  https://data.cityofnewyork.us/City-Government/Open-Parking-and-Camera-Violations/nc67-uf89
-- New Orelans red light camera citations:  
+- New Orelans red light camera citations:  https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg
 - IDOT traffic pattern:  http://www.idot.illinois.gov/transportation-system/Network-Overview/highway-system/illinois-travel-statistics
 - NOAA daily weather summary:  https://www.ncdc.noaa.gov/cdo-web/webservices/v2
 

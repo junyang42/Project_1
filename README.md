@@ -54,7 +54,7 @@ Change in pattern after 2017
 
 ### Citation Pattern vs. Traffic Pattern
 #### Citations by Month (Left) and Hour (Right)
-image to include
+![ImageMonthPatternTraffic](https://github.com/junyang42/Project_1/blob/master/Summary/Traffic%20vs%20Month%20Count.png)![ImageHourPatternTraffic](https://github.com/junyang42/Project_1/blob/master/Summary/Traffic%20vs%20Hour%20Count.png)
 
 ### Citation vs. Weather
 #### Temperature

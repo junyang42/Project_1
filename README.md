@@ -6,7 +6,7 @@
 2. How Chicago compares with other cities
 3. Citation counts compared to traffic pattern
 4. How weather may affect citation counts
-5. Hot spots 
+5. Hot spots/pattern across the city
 
 ## Data Source
 - Chicago red light camera citations:  https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data
@@ -39,6 +39,7 @@
 ![ImageDailyPlotChicago](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_Chicago.png)
    1. Citation counts increased significantly after spring 2014. It coincides with the period with new vendor and allegations that tickets were issued with yellow lights less than 3 seconds
    2. Sharp drops on snow days (e.g. Feb 1, 2015: 397 tickets citywide)
+   3. Further analysis limits to 2014 and 2018 data
   
 2. New York City
 ![ImageDailyPlotNYC](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_NY.png)
@@ -51,3 +52,31 @@ Change in pattern after 2017
 #### Citations by Month (Left) and Hour (Right)
 ![ImageMonthPattern](https://github.com/junyang42/Project_1/blob/master/Summary/MonthlyCount.png)![ImageHourPattern](https://github.com/junyang42/Project_1/blob/master/Summary/HourCount.png)
 
+### Citation Pattern vs. Traffic Pattern
+#### Citations by Month (Left) and Hour (Right)
+image to include
+
+### Citation vs. Weather
+#### Temperature
+![ImageChicagoTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20CHI.png)![ImageNYCTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20NY.png)![ImageNOTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20NOLA.png)
+
+#### Snow Day
+Images to add Chicago and New York
+
+### Precipitation
+Images to add for three cities
+
+### Citation counts across the city
+* Camera locations geocoded
+* Normalize by traffic using nearby traffic study
+
+#### Box Plot by Zip Code
+Image to add...
+* At most locations, it is about 1 citation per 1000 vehicles
+* Top 5 are Cicero x Lawrence, Jackson at Columbus Park, Ogden at Douglas Park, 445 127th St by Little Calumet River, and 4124 W Foster Ave (by North Branch Chicago River)
+
+#### Heat Map
+![ImageHeatMap](https://github.com/junyang42/Project_1/blob/master/Chicago/AvgPerVehicleHeatMap.png)
+
+#### Another Map Aggregating Daily Citation Counts by Zip Code
+![ImageZCMap](https://github.com/junyang42/Project_1/blob/master/Chicago/DailyTotal_ZipCode.png)

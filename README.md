@@ -10,71 +10,82 @@
 
 ## Data Source
 - Chicago red light camera citations:  https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data
-- Chicago traffic:  data:https://data.cityofchicago.org/Transportation/Average-Daily-Traffic-Counts/pfsx-4n4m
 - New York City red light camera citations:  https://data.cityofnewyork.us/City-Government/Open-Parking-and-Camera-Violations/nc67-uf89
 - New Orelans red light camera citations:  https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg
 - IDOT traffic pattern:  http://www.idot.illinois.gov/transportation-system/Network-Overview/highway-system/illinois-travel-statistics
-- NOAA daily weather summary:  https://www.ncdc.noaa.gov/cdo-web/webservices/v2
+- Chicago traffic:  data:https://data.cityofchicago.org/Transportation/Average-Daily-Traffic-Counts/pfsx-4n4m
+- NOAA daily weather:  https://www.ncdc.noaa.gov/cdo-web/webservices/v2
 
 ## Approach
-1. Group citation counts by various time intervals (month, day, hour)
+1. Condense data to daily citation numbers
+2. Group citation counts by various time intervals (month and hour)
    1. Explore counts patterns over time for Chicago, New York and New Orleans
    2. Explore counts patterns by hour and month
-2. Compare pattern against traffic pattern (For Chicago only)
+3. Compare pattern against traffic pattern (For Chicago only)
 
-   Normalize citation counts by IDOT Northeast Urban annual average daily traffic (AADT) pattern
+   Compared against IDOT annual average daily traffic (AADT) pattern for Northeast Urban area
    
-3. Citation Counts vs. Weather
-
+4. Citation Counts vs. Weather
    1. Queried daily precipitation, snow and temperature data from NOAA Climate Data Online web service API
-   
    2. Explore pattern against temperature, snow days and rainy days using scatter plots and box plots
-4. Chicago Citation Counts by Camera Location
-
-   Explore citation pattern with box plots and maps
+5. Chicago Citation Counts by Neighborhood
+   1. Geocoded camera locations
+   2. Queried traffic counts around camera locations using Chicago Data Portal API
+   3. Calculate citation per 1,000 vehicle traffic rate for each location
+   4. Locate the camera locations with highest rate of citation per vehicle traffic
+   5. Explore citation pattern with box plots and maps
 
 ## Analysis
 ### Daily Citation Counts over Time
 1. Chicago
 ![ImageDailyPlotChicago](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_Chicago.png)
-   1. Citation counts increased significantly after spring 2014. It coincides with the period with new vendor and allegations that tickets were issued with yellow lights less than 3 seconds
+   1. Citations has increased significantly since spring 2014. Coincided with the period with new vendor and allegations that citations were issued with yellow lights less than 3 seconds
    2. Sharp drops on snow days (e.g. Feb 1, 2015: 397 tickets citywide)
-   3. Further analysis limits to 2014 and 2018 data
+   3. Further analysis limits to 2014 - 2018 data
   
 2. New York City
 ![ImageDailyPlotNYC](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_NY.png)
+* Regular year-to-year pattern; higher in summer
 
 3. New Orleans
 ![ImageDailyPlotNO](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_New_Orleans.png)
-Change in pattern after 2017
+* Change in pattern after 2017
 
 ### Time Pattern
 #### Citations by Month (Left) and Hour (Right)
 ![ImageMonthPattern](https://github.com/junyang42/Project_1/blob/master/Summary/MonthlyCount.png)![ImageHourPattern](https://github.com/junyang42/Project_1/blob/master/Summary/HourCount.png)
+* Higher in summer for Chicago and New York; opposite for New Orleans
+* Higher during day time for Chicago and New York; two spikes (8am and 3 pm) for New Orleans
 
-### Citation Pattern vs. Traffic Pattern
+### Chicago: Citation Pattern vs. Traffic Pattern
 #### Citations by Month (Left) and Hour (Right)
 ![ImageMonthPatternTraffic](https://github.com/junyang42/Project_1/blob/master/Summary/Traffic%20vs%20Month%20Count.png)![ImageHourPatternTraffic](https://github.com/junyang42/Project_1/blob/master/Summary/Traffic%20vs%20Hour%20Count.png)
+* citation (green) generally follow the traffic (blue dash line) pattern
 
 ### Citation vs. Weather
 #### Temperature
 ![ImageChicagoTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20CHI.png)![ImageNYCTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20NY.png)![ImageNOTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20NOLA.png)
 
-#### Snow Day
+#### Snow
 ![ImageBoxSnowChicago](https://github.com/junyang42/Project_1/blob/master/Summary/Boxplot%20of%20Snow%20for%20Chicago.png)
-Images to add Chicago and New York
+New York City image to be added.
 
-### Precipitation
-Images to add for three cities
+### Rain
+![ImageBoxPrcpChicago](https://github.com/junyang42/Project_1/blob/master/NOLA/Chicago%20Citation%20Counts%20by%20Precipitation%20Variety.png)![ImageBoxPrcpNYC](https://github.com/junyang42/Project_1/blob/master/NOLA/NY%20Citation%20Counts%20by%20Precipitation%20Variety.png)![ImageBoxPrcpNO](https://github.com/junyang42/Project_1/blob/master/NOLA/NOLA%20Citation%20Counts%20by%20Precipitation%20Variety.png)
 
-### Citation counts across the city
+### Citation Counts across the City
 * Camera locations geocoded
 * Normalize by traffic using nearby traffic study
 
 #### Box Plot by Zip Code
-Image to add...
-* At most locations, it is about 1 citation per 1000 vehicles
-* Top 5 are Cicero x Lawrence, Jackson at Columbus Park, Ogden at Douglas Park, 445 127th St by Little Calumet River, and 4124 W Foster Ave (by North Branch Chicago River)
+![ImageBoxZipCode](https://github.com/junyang42/Project_1/blob/master/Chicago/BoxPlotbyZipCode.png)
+1. At most locations, it is about 1 citation per 1000 vehicles
+2. Top 5 Locations are 
+   1. Cicero x Lawrence by I90/94 junction (Albany Park), 
+   2. Jackson at Columbus Park,
+   3. Ogden at Douglas Park,
+   4. 445 127th St (West Pullman), and 
+   5. 4124 W Foster Ave (Albany Park)
 
 #### Heat Map
 ![ImageHeatMap](https://github.com/junyang42/Project_1/blob/master/Chicago/AvgPerVehicleHeatMap.png)

@@ -54,8 +54,8 @@
 ### Time Pattern
 #### Citations by Month (Left) and Hour (Right)
 ![ImageMonthPattern](https://github.com/junyang42/Project_1/blob/master/Summary/MonthlyCount.png)![ImageHourPattern](https://github.com/junyang42/Project_1/blob/master/Summary/HourCount.png)
-* Higher in summer for Chicago and New York; opposite for New Orleans
-* Higher during day time for Chicago and New York; two spikes (8am and 3 pm) for New Orleans
+* Lowerer in winter for Chicago and New York; lower in summer for New Orleans
+* Higher during day time; two spikes (8am and 3 pm) for New Orleans
 
 ### Chicago: Citation Pattern vs. Traffic Pattern
 #### Citations by Month (Left) and Hour (Right)

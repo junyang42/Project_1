@@ -9,4 +9,6 @@
 
 4) `TicketsHeatMap` plots ticket data into 2 heat maps; one using daily average, the other using tickets per 1,000 vehicles
 
+5) `TicketsMapbyZipCode` look at citation counts by zip code; create box plot and map
+
 Results and charts stored in *.csv and *.png files in the same folder

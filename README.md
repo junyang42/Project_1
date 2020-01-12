@@ -2,8 +2,8 @@
 #### by Araceli Buenrostro, Arthur Chan, and Jun Yang
 
 ## Project Outline
-1. Explore historical time pattern of red light citation data
-2. How Chicago compares with other cities
+1. Explore historical time pattern of red light camera citation data
+2. How Chicago compared with other cities
 3. Citation counts compared to traffic pattern
 4. How weather may affect citation counts
 5. Hot spots/pattern across the city
@@ -13,11 +13,11 @@
 - New York City red light camera citations:  https://data.cityofnewyork.us/City-Government/Open-Parking-and-Camera-Violations/nc67-uf89
 - New Orelans red light camera citations:  https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg
 - IDOT traffic pattern:  http://www.idot.illinois.gov/transportation-system/Network-Overview/highway-system/illinois-travel-statistics
-- Chicago traffic:  data:https://data.cityofchicago.org/Transportation/Average-Daily-Traffic-Counts/pfsx-4n4m
+- Chicago traffic:  https://data.cityofchicago.org/Transportation/Average-Daily-Traffic-Counts/pfsx-4n4m
 - NOAA daily weather:  https://www.ncdc.noaa.gov/cdo-web/webservices/v2
 
 ## Approach
-1. Condense data to daily citation numbers
+1. Condense raw data to daily citation numbers; raw data contains millions of citation entries. Each entry is one citation with address, time stamp and other info.
 2. Group citation counts by various time intervals (month and hour)
    1. Explore counts patterns over time for Chicago, New York and New Orleans
    2. Explore counts patterns by hour and month
@@ -45,22 +45,24 @@
   
 2. New York City
 ![ImageDailyPlotNYC](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_NY.png)
-* Regular year-to-year pattern; higher in summer
+   1. Regular year-to-year pattern; higher in summer
+   2. Pattern similar to Chicago
 
 3. New Orleans
 ![ImageDailyPlotNO](https://github.com/junyang42/Project_1/blob/master/Summary/Daily_Count_New_Orleans.png)
-* Change in pattern after 2017
+   1. Pattern changed in 2009 and then in 2017
 
 ### Time Pattern
 #### Citations by Month (Left) and Hour (Right)
 ![ImageMonthPattern](https://github.com/junyang42/Project_1/blob/master/Summary/MonthlyCount.png)![ImageHourPattern](https://github.com/junyang42/Project_1/blob/master/Summary/HourCount.png)
 * Lowerer in winter for Chicago and New York; lower in summer for New Orleans
-* Higher during day time; two spikes (8am and 3 pm) for New Orleans
+* Higher during day time; two spikes (8 am and 3 pm) for New Orleans
 
 ### Chicago: Citation Pattern vs. Traffic Pattern
 #### Citations by Month (Left) and Hour (Right)
 ![ImageMonthPatternTraffic](https://github.com/junyang42/Project_1/blob/master/Summary/Traffic%20vs%20Month%20Count.png)![ImageHourPatternTraffic](https://github.com/junyang42/Project_1/blob/master/Summary/Traffic%20vs%20Hour%20Count.png)
 * citation (green) generally follow the traffic (blue dash line) pattern
+* note: y-axis is percentage of analysis period. For example on the graph to the left, May has 10% of annual citations and ~8.7% of annual traffic in Chicago
 
 ### Citation vs. Weather
 #### Temperature
@@ -70,16 +72,16 @@
 ![ImageBoxSnowChicago](https://github.com/junyang42/Project_1/blob/master/Summary/Boxplot%20of%20Snow%20for%20Chicago.png)
 New York City image to be added.
 
-### Rain
+#### Rain
 ![ImageBoxPrcpChicago](https://github.com/junyang42/Project_1/blob/master/NOLA/Chicago%20Citation%20Counts%20by%20Precipitation%20Variety.png)![ImageBoxPrcpNYC](https://github.com/junyang42/Project_1/blob/master/NOLA/NY%20Citation%20Counts%20by%20Precipitation%20Variety.png)![ImageBoxPrcpNO](https://github.com/junyang42/Project_1/blob/master/NOLA/NOLA%20Citation%20Counts%20by%20Precipitation%20Variety.png)
 
 ### Citation Counts across the City
 * Camera locations geocoded
-* Normalize by traffic using nearby traffic study
+* Normalize by traffic using nearby traffic study (calculated `Number of citations per 1,000 vehicular traffic`)
 
 #### Box Plot by Zip Code
 ![ImageBoxZipCode](https://github.com/junyang42/Project_1/blob/master/Chicago/BoxPlotbyZipCode.png)
-1. At most locations, it is about 1 citation per 1000 vehicles
+1. Median is 0.4 citation per 1,000 vehicular traffic (or 0.04%)
 2. Top 5 Locations are 
    1. Cicero x Lawrence by I90/94 junction (Albany Park), 
    2. Jackson at Columbus Park,
@@ -92,3 +94,10 @@ New York City image to be added.
 
 #### Another Map Aggregating Daily Citation Counts by Zip Code
 ![ImageZCMap](https://github.com/junyang42/Project_1/blob/master/Chicago/DailyTotal_ZipCode.png)
+
+## Summary (Chicago)
+* Interesing spikes in number of citations in spring 2014 without significant increase in camera locations
+* Monthly and hourly citation patterns appear to follow traffic pattern
+* Citation counts appear lower during snow days; higher during rainy days
+* Median: 0.4 citation per 1,000 vehicular traffic (or 4 citations per 10,000)
+* 2 of top 5 are in Albany Park

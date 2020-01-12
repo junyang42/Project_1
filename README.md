@@ -77,8 +77,9 @@
 ### Citation Counts across the City
 * Camera locations geocoded
 * Normalize by traffic using nearby traffic study (calculated `Number of citations per 1,000 vehicular traffic`)
+* 3 different ways to visualize
 
-#### Box Plot by Zip Code
+#### 1. Box Plot by Zip Code
 ![ImageBoxZipCode](https://github.com/junyang42/Project_1/blob/master/Chicago/BoxPlotbyZipCode.png)
 1. Median is 0.4 citation per 1,000 vehicular traffic (or 0.04%)
 2. Top 5 Locations are 
@@ -88,13 +89,13 @@
    4. 445 127th St (West Pullman), and 
    5. 4124 W Foster Ave (Albany Park)
 
-#### Heat Map
+#### 2. Heat Map of All Camera Locations
 ![ImageHeatMap](https://github.com/junyang42/Project_1/blob/master/Chicago/AvgPerVehicleHeatMap.png)
 
-#### Another Map Aggregating Daily Citation Counts by Zip Code
+#### 3. Map of Daily Citation Counts by Zip Code
 ![ImageZCMap](https://github.com/junyang42/Project_1/blob/master/Chicago/DailyTotal_ZipCode.png)
 
-## Summary (Chicago)
+# Summary (Chicago)
 * Interesing spikes in number of citations in spring 2014 without significant increase in camera locations
 * Monthly and hourly citation patterns appear to follow traffic pattern
 * Citation counts appear lower during snow days; higher during rainy days

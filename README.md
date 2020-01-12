@@ -69,8 +69,7 @@
 ![ImageChicagoTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20CHI.png)![ImageNYCTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20NY.png)![ImageNOTemp](https://github.com/junyang42/Project_1/blob/master/Summary/Temp%20vs%20Violation%20Count%20for%20NOLA.png)
 
 #### Snow
-![ImageBoxSnowChicago](https://github.com/junyang42/Project_1/blob/master/Summary/Boxplot%20of%20Snow%20for%20Chicago.png)
-New York City image to be added.
+![ImageBoxSnowChicago](https://github.com/junyang42/Project_1/blob/master/Summary/Boxplot%20of%20Snow%20for%20Chicago.png)![ImageBoxSnowNYC](https://github.com/junyang42/Project_1/blob/master/Summary/Boxplot%20of%20Snow%20for%20New%20York.png)
 
 #### Rain
 ![ImageBoxPrcpChicago](https://github.com/junyang42/Project_1/blob/master/NOLA/Chicago%20Citation%20Counts%20by%20Precipitation%20Variety.png)![ImageBoxPrcpNYC](https://github.com/junyang42/Project_1/blob/master/NOLA/NY%20Citation%20Counts%20by%20Precipitation%20Variety.png)![ImageBoxPrcpNO](https://github.com/junyang42/Project_1/blob/master/NOLA/NOLA%20Citation%20Counts%20by%20Precipitation%20Variety.png)

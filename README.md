@@ -76,7 +76,7 @@
 
 ### Citation Counts across the City
 * Camera locations geocoded
-* Normalize by traffic using nearby traffic study (calculated `Number of citations per 1,000 vehicular traffic`)
+* Calculated "rates" of citation using nearby traffic count (`Number of citations per 1,000 vehicular traffic`)
 * 3 different ways to visualize
 
 #### 1. Box Plot by Zip Code
